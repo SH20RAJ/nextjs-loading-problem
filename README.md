@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+> https://github.com/vercel/next.js/discussions/64822
 
-## Getting Started
+Summary
+if i click and navigate to about from the main page after loading of data in main page and then i come from about to the main page using navigation i see the loading once or req too the api is sent once more time, I don't want that if the user already loaded the api and navigated then come back it should show the previous data ( even it should show the scroll loc until I scrolled on the main page)
 
-First, run the development server:
+"When a user navigates from the main page to the about page after the data has loaded on the main page, and then returns to the main page using navigation, I want to ensure that the data isn't reloaded unnecessarily. I want the previously fetched data to be displayed without triggering another API request. Additionally, I'd like the scroll position of the main page to remain unchanged, even after navigating away from and back to the main page."
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+See like youtube is also a single page app and fetches the video feeds from api (client side). but when we navigate to another page then come back we see the previous video feeds but in my case if I come back to my page it recalls the api fetch and show the data (only in case of client component )
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Test and open preview on Stackblitz :- https://stackblitz.com/~/github.com/SH20RAJ/nextjs-loading-problem
+Github Repo :- https://github.com/SH20RAJ/nextjs-loading-problem
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Specific Commit :- https://github.com/SH20RAJ/nextjs-loading-problem/tree/84f8788a05479c63cd8737a9d5a340a31aabf69e
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+// Used Suspense
+// Used loading state from useState()
+// Used Loading.js
 
-## Learn More
+// Still the problem isn't solved yet
 
-To learn more about Next.js, take a look at the following resources:
+// have to do it in client side because server side is working
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Additional information
+// Used Suspense
+// Used loading state from useState()
+// Used Loading.js
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+// Still the problem isn't solved yet
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+// have to do it in client side because server side is working
+Example
+https://stackblitz.com/~/github.com/SH20RAJ/nextjs-loading-problem
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
