@@ -1,7 +1,6 @@
-import { Inter } from "next/font/google";
-import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+// layout.js
+import React from "react";
+import Link from "next/link";
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +10,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <nav>
+          <Link href={"/"}>Main</Link>
+          { "   "}
+          <Link href={"/about"}>About</Link>
+        </nav>
+        {children}
+      </body>
     </html>
   );
 }
