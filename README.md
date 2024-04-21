@@ -10,6 +10,10 @@ See like youtube is also a single page app and fetches the video feeds from api 
 Test and open preview on Stackblitz :- https://stackblitz.com/~/github.com/SH20RAJ/nextjs-loading-problem
 Github Repo :- https://github.com/SH20RAJ/nextjs-loading-problem
 
+
+https://github.com/SH20RAJ/nextjs-loading-problem/assets/66713844/63a0b094-35c7-4c54-9c10-126feefd4cc7
+
+
 Specific Commit :- https://github.com/SH20RAJ/nextjs-loading-problem/tree/84f8788a05479c63cd8737a9d5a340a31aabf69e
 
 // Used Suspense
